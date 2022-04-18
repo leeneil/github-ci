@@ -1,6 +1,7 @@
 import unittest
 import json
 
+
 class ValidateJson(unittest.TestCase):
 
     def setUp(self):
