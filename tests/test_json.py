@@ -11,6 +11,9 @@ class ValidateJson(unittest.TestCase):
     def test1(self):
         self.assertGreaterEqual(len(self.data["data"]), 1)
 
+    def test2(self):
+        for d in self.data["data"]:
+            self.assertIn("name", d)
 
 if __name__ == '__main__':
     unittest.main()
